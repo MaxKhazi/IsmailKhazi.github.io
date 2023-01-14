@@ -3,59 +3,152 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
-  
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-    <script type="text/javascript" src="/particles.js"></script>
-<script type="text/javascript" src="/app.js"></script>
-    <div class="container">
-        <div class="sidebar">
+    <div class="hero">
+        <nav>
+            <h2 class="logo">Portfo<span>lio</span></h2>
+            <ul>
+                <li><a href="#content">Home</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#se">Skills & Education</a></li>
+                <li><a href="#contact">Contact me</a></li>
+            </ul>
+            <a href="#resume" class="btn">Resume</a>
+        </nav>
+        <div id="content">
+            <h4>Hello, I'm </h4>
+            <h1>Mohammed Ismail <span>Khazi,</span></h1>
+            <h3>Associate Software Engineer</h3>
+            <h3><i class="fa fa-phone"></i> 8951078835 <i class="fa fa-envelope"></i> maxkhazi10@gmail.com</h3>
+            <h3>Bangalore, India</h3>
+            <h3></h3>
+           
 
-    <nav style="padding: 72px;">
-        <li><a href="index.html"><i class="fa fa-user-circle-o"></i> About Me</a></li>
-        <li><a href="services.html"><i class="fa fa-code"></i> Skills & Education</a></li>
-        <li><a href="projects.html"><i class="fa fa-laptop"></i> Projects</a></li>
-        
-    </nav>
-   
         </div>
-  
-   <div class="main">
-    <div class="port"><i class="fa fa-briefcase"></i> Portfolio</div>
-   <div class="infoContainer">
-    
-    <div class="devInfo">
-        <div class="hi">Hi, I'm</div>
-        <div class="name">Mohammed Ismail Khazi,</div>
-        <div class="about">Associate Software Engineer</div>
-        <div class="about">Bangalore, India</div>
-        <div class="about"><i class="fa fa-mobile"></i> 8951078835 <i class="fa fa-envelope-o"> maxkhazi10@gmail.com</i></div>
-        
-        <div class="buttons">
-            <a href="resume.pdf" target="_blank">
-            <button><i class="fa fa-download"></i> Download Resume</button></a>
+    </div>
+    <section id="about">
+        <div class="main">
+        <img src="ni.jpg" alt="img">
+        <div class="about-text">
+            <h2>About Me</h2>
+            <h5>Associate Software Engineer</h5>
+            <p>I am an Associate Software Engineer. I have been trained in Core Java, Advanced Java, Spring Boot and in frontend
+                skills like HTML, CSS, Javascript and basics of Angular. I am flexible
+                to work in frontend as well as in backend. During my training period I have built some projects using Spring Boot and 
+                Angular.
+            </p>
+           <!--<button type="button">Let's Talk</button>--> 
+
+        </div>
+        </div>
+    </section>
+    <div id="projects">
+        <div class="title">
+            <h2>Projects</h2>
+        </div>
+        <div class="box">
+            <div class="card">
+                <i class="fas fa-bank"></i>
+                <h5>Bank Application</h5>
+                <div class="pra">
+                  <p>Web application for performing banking activities
+                    like creating bank account, applying loan, requesting
+                    cheque book, cash withdraw and deposit.</p>
+                    <p>Frontend & Backend: HTML, CSS, Typescript and Java</p>
+                    <p>Frameworks: SpringBoot and Angular.</p>
+                  </p>
+                </div>
+              </div>
+            <div class="card">
+              <i class="fas fa-address-card"></i>
+              <h5>M Aadhaar App</h5>
+              <div class="pra">
+                <p>Web application for applying for online aadhaar card,
+                    Using this application user can register and apply for
+                   card, Admin can approve user’s request for
+                    aadhar card.
+                </p>
+                <p>Frontend & Backend: HTML, CSS, Typescript and Java</p>
+                <p>Frameworks: SpringBoot and Angular.</p>
+                
+              </div>
+            </div>
+              <div class="card">
+                <i class="fas fa-desktop"></i>
+                <h5>Online Examination System</h5>
+                <div class="pra">
+                  <p>Web application for conducting online exams for
+                    students by educational institutions, This application
+                     has automatic proctoring system.
+                  </p>
+                  <p>Frontend & Backend: HTML, CSS, Typescript and Python</p>
+                <p>Framework: Django.</p>
+                </div>
+              </div>
+        </div>
+    </div>
+    <div id="se">
+        <div class="title">
+            <h2>Skills & Education</h2>
+        </div>
+        <div class="box">
+            <div class="card">
+                <i class="fas fa-code"></i>
+                <h5>Technical Skills</h5>
+                <div class="pra">
+                  <p>Java, J2EE, Hibernate, Spring framework, Spring MVC,
+                    SpringBoot, HTML, CSS, Javascript, SQL and Basics of
+                    Angular.</p>
+                  </p>
+                </div>
+              </div>
+            <div class="card">
+              <i class="fas fa-face-smile-wink"></i>
+              <h5>Soft Skills</h5>
+              <div class="pra">
+                <p>Communication, Adaptability, Interpersonal Skills,
+                    Creativity.
+                </p>
+               
+                
+              </div>
+            </div>
+              <div class="card">
+                <i class="fas fa-graduation-cap"></i>
+                <h5>Education</h5>
+                <div class="pra">
+                  <p>Master of Computer Applications
+                   PES University, Bangalore - 
+                  2022</p>
+                  <p>Bachelor of Computer Applications
+                  KLE College of BBA & BCA, Dharwad 
+                  - 2019</p>
+                 
+                </div>
+               
+              </div>
+        </div>
+    </div>
+    <div id="resume"> 
+        <p>Downlod my resume by hitting the download button.</p>
+        <a class="button-two" href="resume.pdf" target="_blank"><i class="fa fa-download"></i> Download Resume</a>
+    </div>
+    <footer id="contact">
+        <p>Mohammed Ismail Khazi</p>
+        <p>Find my contact details below:</p>
+        <div class="social">
+            <p>&emsp;&emsp;&emsp;8951078835 <br/> maxkhazi10@gmail.com</p>
             
         </div>
-        
-    </div>
-    <div class="devPic"><img src="image.jpg" alt="img"></div>
-   </div>
-   <div class="b">
-    <div class="a">
-        I want to succeed in a stimulating and challenging environment, building the success of
-the company while I experience advancement
-opportunities. I have been trained in Spring Boot and have also built some projects using Spring Boot and Angular.
-    </div>
-   </div>
-   </div>
-   
-   </div>
-</div>
+        <p class="end">CopyRight By Mohammed Ismail Khazi</p>
+    </footer>
 </body>
 </html>
